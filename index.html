@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" />
+        <title>Search</title>
+        <style>
+            
+            .search-buttons {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 5px;
+            }
+            .search-buttons input {
+                width: 200px;
+                height: 50px;
+                font-size: 20px;
+                padding: 10px;
+                border: 1px solid #dfe1e5;
+                border-radius: 5px;
+                outline: none;
+                margin: 0 10px;
+            }
+            .headerlogo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            .headerlogo img {
+                width: 272px;
+                height: 92px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-links">
+                <a href="image.html">Google Images</a>
+                <a href="advanced.html">Google Advanced</a>
+            </div>
+        </div>
+        <div class="search">
+            <div class="headerlogo">
+                <a href="index.html">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" />
+                </a>
+            </div>
+            <div class="search-input">
+                <form method="get" action="https://www.google.com/search">
+                    <input type="text" name="q" />
+                    <div class="search-buttons">
+                        <input type="submit" value="Google Search" />
+                        <input type="submit" name="btnI" value="I'm Feeling Lucky" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

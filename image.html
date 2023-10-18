@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Image Search</title>
+    <style>
+        
+        .search-buttons {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5px;
+        }
+        .search-buttons input {
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            padding: 10px;
+            border: 1px solid #dfe1e5;
+            border-radius: 5px;
+            outline: none;
+            margin: 0 10px;
+        }
+        .headerlogo {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            height: 100px;
+        }
+        .headerlogo img {
+            width: 272px;
+            height: 92px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="header-links">
+            <a href="index.html">Google Search</a>
+            <a href="advanced.html">Advanced Search</a>
+        </div>
+    </div>
+    <div class="search">
+        <div class="headerlogo">
+            <a href="index.html">
+                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" />
+            </a>
+        </div>
+        <div class="search-input">
+            <form method="get" action="https://www.google.com/images">
+                <input type="text" name="q" />
+                <div class="search-buttons">
+                    <input type="submit" value="Image Search" />
+                </div>
+            </form>
+        </div>
+</body>
+</html>
